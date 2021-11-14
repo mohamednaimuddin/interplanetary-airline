@@ -1,0 +1,60 @@
+h1 {
+    text-align: center;
+    text-decoration: solid;
+    border: orange;
+    border-width: 5px;
+    border-style: solid;
+    background-color: rgb(255, 200, 97);
+    position: sticky;
+    top: 0;
+}
+
+.price {
+    text-align: center;
+    text-decoration: solid;
+    border: orange;
+    border-width: 5px;
+    border-style: solid;
+    background-color: rgb(144, 180, 247)
+}
+
+table {
+    text-align: center;
+    padding: 10px;
+}
+
+tr:hover {
+    color: red;
+}
+
+H2 {
+    text-align: center;
+    text-decoration: solid;
+    border: orange;
+    border-width: 5px;
+    border-style: solid;
+    background-color: rgb(255, 200, 97);
+}
+
+.info {
+    padding: 10px;
+    text-align: center;
+    text-decoration: solid;
+    border: 10px orange;
+    border-width: 1px;
+    border-style: solid;
+    background-color: rgb(144, 180, 247);
+}
+
+button {
+    color: indigo;
+}
+
+.button {
+    background-color: lightblue;
+    text-align: center;
+}
+
+body {
+    background-color: black;
+}

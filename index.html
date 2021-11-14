@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTERPLANETARY AIRLINE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>INTERPLANETARY AIRLINE</h1>
+
+    <div class="price">
+
+        <table border="2" style="width: 100%; text-align: center;">
+            <caption style="position: sticky;top:1; text-align: center;color: red;
+            text-decoration: solid;
+            border: cornflowerblue;
+            border-width: 5px;
+            border-style: solid;
+            background-color: rgb(79, 79, 184); ">PRICE TABLE IN RS</caption>
+
+            <tr>
+                <th>FROM</th>
+                <th>TO</th>
+                <th>PRICE</th>
+            </tr>
+            <tr>
+                <td>EARTH STATION</td>
+                <td>VENUS</td>
+                <td>5000</td>
+            </tr>
+            <tr>
+                <td>EARTH STATION</td>
+                <td>JUPITER</td>
+                <td>6000</td>
+            </tr>
+            <tr>
+                <td>EARTH STATION</td>
+                <td>MARS</td>
+                <td>5000</td>
+            </tr>
+            <tr>
+                <td>EARTH STATION</td>
+                <td>SATURN</td>
+                <td>7000</td>
+            </tr>
+            <tr>
+                <td>EARTH STATION</td>
+                <td>SATURN RING STATION</td>
+                <td>8000</td>
+            </tr>
+
+            <tr>
+                <td>EARTH STATION</td>
+                <td>URANUS</td>
+                <td>10000</td>
+            </tr>
+            <tr>
+                <td>EARTH STATION</td>
+                <td>NEPTUNE</td>
+                <td>12000</td>
+            </tr>
+            <tr>
+                <td>EARTH STATION</td>
+                <td>PLUTO</td>
+                <td>15000</td>
+            </tr>
+            <tr>
+                <td>PLANET (NON)EARTH)</td>
+                <td>PLANET (NON) EARTH</td>
+                <td>20000</td>
+            </tr>
+
+
+        </table>
+        <h4 style="color: red; text-align: center;">( NOTE:ONLINE PAYMENT NOT AVAILABLE FOR THE TIME BEING ,PAYMENT ACCEPTED AT THE TIME OF DEPARTURE FROM THE DEPARTURE CENTER)</h4>
+
+    </div>
+
+
+    <h2 style="text-decoration: underline;">CHECK AVAILABILITY FOR <em>DIRECTION</em>:</h2>
+
+    <div class="info">
+        <fieldset>
+            <label>ENTER YOUR NAME:</label>
+            <input id="name" style="border: none;background:pink;text-decoration: underline; " type="text" required>
+        </fieldset>
+    </div>
+
+    <div class="info">
+        <fieldset>
+            <label>PHONE NUMBER:</label>
+            <input id="number" style="border: none;background:pink;text-decoration: underline;" type="number">
+        </fieldset>
+    </div>
+
+    <div class="info">
+        <fieldset>
+            <label>ENTER YOUR AGE:</label>
+            <input id="AGE" style="border: none;background:pink;text-decoration: underline;" type="number">
+        </fieldset>
+    </div>
+
+    <div class="info">
+        <fieldset>
+            <label>FROM:</label>
+            <select id="form" style="border:none;background:pink" name='from' onchange='this.form.()'>
+                <option value="">Select a location...</option>
+                <option value="EARTH STATION-1">EARTH STATION-1(ISRO)</option>
+                <option value="EARTH STATION-2">EARTH STATION-2(SPACE-X)</option>
+                <option value="EARTH STTION-3">EARTH STATION-3(NASA)</option>
+                <option value="VENUS">VENUS</option>
+                <option value="JUPITER">JUPITER</option>
+                <option value="MARS">MARS</option>
+                <option value="SATURN ">SATURN </option>
+                <option value="SATURN RING STATION">SATURN RING STATION</option>
+                <option value="URANUS">URANUS</option>
+                <option value="NEPTUNE">NEPTUNE</option>
+				<option value="PLUTO">PLUTO</option>
+            </select>
+        </fieldset>
+    </div>
+
+
+    <div class="info">
+        <fieldset>
+            <label>TO:</label>
+            <select id="form1" style="border:none;background:pink" name='to' onchange='this.form.()'>
+                <option value=" ">Select a location...</option>
+                <option value="EARTH STATION-1 ">EARTH STATION-1(ISRO)</option>
+                <option value="EARTH STATION-2 ">EARTH STATION-2(SPACE-X)</option>
+                <option value="EARTH STATION-3 ">EARTH STATION-3(NASA)</option>
+                <option value="VENUS ">VENUS</option>
+                <option value="JUPITER ">JUPITER</option>
+                <option value="MARS ">MARS</option>
+                <option value="SATURN ">SATURN</option>
+                <option value="SATURN RING STATION ">SATURN RING STATION</option>
+                <option value="URANUS ">URANUS</option>
+                <option value="NEPTUNE ">NEPTUNE</option>
+				<option value="PLUTO ">PLUTO</option>
+            </select>
+        </fieldset>
+    </div>
+
+
+    <div class="info">
+        <fieldset>
+            <label>DEPARTURE DATE:</label>
+            <input style="background-color: pink;" id="form2" type="date" placeholder="Select date... ">
+        </fieldset>
+    </div>
+
+
+    <div class="info">
+        <fieldset>
+            <label>RETURN DATE:</label>
+            <input style="background-color: pink;" id="form3" name="return " type="date" placeholder="Select date... ">
+        </fieldset>
+    </div>
+
+
+    <div class="info">
+        <label for="round">Round</label>
+        <input id="round" type="radio" name="trip" value="round" required="required">
+
+        <label for="oneway">Oneway</label>
+        <input style="box-sizing: border-box;" id="oneway" type="radio" name="trip" value="one-way" required="required">
+    </div>
+
+
+
+
+    <div class="button">
+        <fieldset><button onclick="printmessage()">Order Ticket Now</button></fieldset>
+    </div>
+    <h4 style="width: 100%;color: white;text-align: center;border: white 1px;">.........SUMMARY..........</h4>
+    <div style="border-color: turquoise;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color: white;border:100%;" id="msg"></div>
+
+
+
+    <h1>MORE ABOUT PLANET <em>(scroll down)</em></h1>
+    <h2>EARTH STATION</h2>
+    <P style="background-color:lightblue;color: blue;">
+        A ground station, Earth station, or Earth terminal is a terrestrial radio station designed for extraplanetary telecommunication with spacecraft (constituting part of the ground segment of the spacecraft system), or reception of radio waves from astronomical
+        radio sources. Ground stations may be located either on the surface of the Earth, or in its atmosphere.[1] Earth stations communicate with spacecraft by transmitting and receiving radio waves in the super high frequency (SHF) or extremely high
+        frequency (EHF) bands (e.g. microwaves). When a ground station successfully transmits radio waves to a spacecraft (or vice versa), it establishes a telecommunications link. A principal telecommunications device of the ground station is the parabolic
+        antenna. Ground stations may have either a fixed or itinerant position. Article 1 § III of the International Telecommunication Union (ITU) Radio Regulations describes various types of stationary and mobile ground stations, and their interrelationships.[2]
+        Specialized satellite Earth stations are used to telecommunicate with satellites — chiefly communications satellites. Other ground stations communicate with crewed space stations or uncrewed space probes. A ground station that primarily receives
+        telemetry data, or that follows space missions, or satellites not in geostationary orbit, is called a ground tracking station, or space tracking station, or simply a tracking station.
+    </P>
+
+    <h2>VENUS</h2>
+    <P style="background-color:lightblue;color: blue;">Venus is the second planet from the Sun. It is named after the Roman goddess of love and beauty. As the brightest natural object in Earth's night sky after the Moon, Venus can cast shadows and can be, on rare occasions, visible to the naked eye in
+        broad daylight.[17][18] Venus lies within Earth's orbit, and so never appears to venture far from the Sun, either setting in the west just after dusk or rising in the east a little while before dawn. Venus orbits the Sun every 224.7 Earth days.[19]
+        It has a synodic day length of 117 Earth days and a sidereal rotation period of 243 Earth days. As a consequence, it takes longer to rotate about its axis than any other planet in the Solar System, and does so in the opposite direction to all
+        but Uranus. This means the Sun rises in the west and sets in the east.[20] Venus does not have any moons, a distinction it shares only with Mercury among the planets in the Solar System.</P>
+
+
+    <h2>JUPITER</h2>
+    <P style="background-color:lightblue;color: blue;">Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a gas giant with a mass more than two and a half times that of all the other planets in the Solar System combined, but slightly less than one-thousandth the mass of
+        the Sun. Jupiter is the third-brightest natural object in the Earth's night sky after the Moon and Venus. It has been observed since pre-historic times and is named after the Roman god Jupiter, the king of the gods, because of its observed size.Jupiter
+        is primarily composed of hydrogen, but helium constitutes one quarter of its mass and one tenth of its volume. It likely has a rocky core of heavier elements,[16] but like the other giant planets, Jupiter lacks a well-defined solid surface. The
+        on-going contraction of its interior generates heat greater than the amount received from the Sun. Because of its rapid rotation, the planet's shape is that of an oblate spheroid; it has a slight but noticeable bulge around the equator. The outer
+        atmosphere is visibly segregated into several bands at different latitudes, with turbulence and storms along their interacting boundaries. A prominent result of this is the Great Red Spot, a giant storm that is known to have existed since at least
+        the 17th century, when it was first seen by telescope.</P>
+
+    <h2>MARS</h2>
+    <p style="background-color:lightblue;color: blue;">Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. In English, Mars carries the name of the Roman god of war and is often referred to as the "Red Planet ".[17][18] The latter
+        refers to the effect of the iron oxide prevalent on Mars's surface, which gives it a reddish appearance (as shown), that is distinctive among the astronomical bodies visible to the naked eye.[19] Mars is a terrestrial planet with a thin atmosphere,
+        with surface features reminiscent of the impact craters of the Moon and the valleys, deserts and polar ice caps of Earth. The days and seasons are comparable to those of Earth, because the rotational period as well as the tilt of the rotational
+        axis relative to the ecliptic plane are similar. Mars is the site of Olympus Mons, the largest volcano and highest known mountain on any planet in the Solar System, and of Valles Marineris, one of the largest canyons in the Solar System. The smooth
+        Borealis basin in the Northern Hemisphere covers 40% of the planet and may be a giant impact feature.[20][21] Mars has two moons, Phobos and Deimos, which are small and irregularly shaped. These may be captured asteroids, similar to 5261 Eureka,
+        a Mars trojan</p>
+
+
+
+    <h2>SATURN</h2>
+    <p style="background-color:lightblue;color: blue;">Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. It is a gas giant with an average radius of about nine and a half times that of Earth.[22][23] It only has one-eighth the average density of Earth;
+        however, with its larger volume, Saturn is over 95 times more massive.[24][25][26] Saturn is named after the Roman god of wealth and agriculture. Its astronomical symbol (♄) has been traced back to the Greek Oxyrhynchus Papyri, where it can be
+        seen to be a Greek kappa-rho with a cross-bar, as an abbreviation for Κρονος (Cronos), the Greek name for the planet.[27] It later came to look like a lower-case Greek eta, with the cross added at the top in the 16th century. The Romans named
+        the seventh day of the week Saturday, Sāturni diēs ("Saturn 's Day") for the planet Saturn.</p>
+
+    <h2>SATURN RING STATION</h2>
+    <p style="background-color:lightblue;color: blue;">The rings of Saturn are the most extensive ring system of any planet in the Solar System. They consist of countless small particles, ranging in size from micrometers to meters,[1] that orbit around Saturn. The ring particles are made almost entirely
+        of water ice, with a trace component of rocky material. There is still no consensus as to their mechanism of formation. Although theoretical models indicated that the rings were likely to have formed early in the Solar System's history,[2] newer
+        data from Cassini suggested they formed relatively late.</p>
+
+    <h2>URANUS</h2>
+    <p style="background-color:lightblue;color: blue;">
+        Uranus is the seventh planet from the Sun. Its name is a reference to the Greek god of the sky, Uranus, who, according to Greek mythology, was the great-grandfather of Ares (Mars), grandfather of Zeus (Jupiter) and father of Cronus (Saturn). It has the
+        third-largest planetary radius and fourth-largest planetary mass in the Solar System. Uranus is similar in composition to Neptune, and both have bulk chemical compositions which differ from that of the larger gas giants Jupiter and Saturn. For
+        this reason, scientists often classify Uranus and Neptune as "ice giants" to distinguish them from the other giant planets. Uranus's atmosphere is similar to Jupiter's and Saturn's in its primary composition of hydrogen and helium, but it contains
+        more "ices" such as water, ammonia, and methane, along with traces of other hydrocarbons.[17] It has the coldest planetary atmosphere in the Solar System, with a minimum temperature of 49 K (−224 °C; −371 °F), and has a complex, layered cloud
+        structure with water thought to make up the lowest clouds and methane the uppermost layer of clouds.[17] The interior of Uranus is mainly composed of ices and rock.
+    </p>
+
+
+    <h2>NEPTUNE</h2>
+    <p style="background-color:lightblue;color: blue;">Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet. It is 17 times the mass of Earth, slightly more massive
+        than its near-twin Uranus. Neptune is denser and physically smaller than Uranus because its greater mass causes more gravitational compression of its atmosphere. The planet orbits the Sun once every 164.8 years at an average distance of 30.1 AU
+        (4.5 billion km; 2.8 billion mi). It is named after the Roman god of the sea and has the astronomical symbol ♆, a stylised version of the god Neptune's trident or the Greek letter psi.</p>
+
+
+    <h2>PLUTO</h2>
+    <p style="background-color:lightblue;color: blue;">Pluto (minor-planet designation: 134340 Pluto) is a dwarf planet in the Kuiper belt, a ring of bodies beyond the orbit of Neptune. It was the first and the largest Kuiper belt object to be discovered. After Pluto was discovered in 1930, it was declared
+        to be the ninth planet from the Sun. Beginning in the 1990s, its status as a planet was questioned following the discovery of several objects of similar size in the Kuiper belt and the scattered disc, including the dwarf planet Eris. This led
+        the International Astronomical Union (IAU) in 2006 to formally define the term "planet"—excluding Pluto and reclassifying it as a dwarf planet.</p>
+
+
+
+
+
+
+    <script src="sample.js "></script>
+</body>
+
+</html>
